@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Music Player</title>
+</head>
+<body>
+
+    <audio src="" id="audio-source" controls></audio>
+    
+    <!-- home section -->
+
+    <section class="home-section">
+        <!-- carousel -->
+        <div class="carousel">
+            <img src="img/cover1.jpg" alt="cover1" class="active">
+            <img src="img/cover2.jpeg" alt="cover2">
+            <img src="img/cover3.jpg" alt="cover3">
+            <img src="img/cover4.jpg" alt="cover4">
+            <img src="img/cover5.jpg" alt="cover5">
+        </div>
+
+        <main class="centrar">
+        <!-- playlist -->
+        <h1 class="heading">Canciones Recientes</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="img/cover6.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">top international</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="img/elamor.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">plays collection</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="img/ena.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">abrahan mateo</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="img/estrategia.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="img/imposible.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">favoritas</p>
+            </div>
+        </div>
+
+        <!-- playlist -->
+        <h1 class="heading">Cantantes del todo el mundo</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="img/cover1.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">top international</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="img/cover2.jpeg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">plays collection</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="img/cover3.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">abrahan mateo</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="img/cover4.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="img/cover5.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">favoritas</p>
+            </div>
+        </div>
+    </section>
+</main>
+        
+    <div class='bx bx-chevron-left botonArriba' ></div>
+    <section class="music-player-section">
+
+        <i class='bx bx-chevron-left back-btn icon hide' ></i>
+        <i class='bx bx-menu nav-btn icon hide'></i>
+
+        <h1 class="current-song-name">Cancion 1</h1>
+        <p class="artist-name hide">artist 1</p>
+
+        <img src="img/cover6.jpg" alt="artist" class="cover hide">
+
+        <div class="sekk-bar-container">
+            <input type="range" value="0" class="music-seek-bar">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <div class="controls">
+            <span class='bx bx-redo'></span>
+                <div class="main">
+                  
+                    <i class='bx bx-rewind active'></i>
+                    <i class='bx bx-play active'></i>
+                    <i class='bx bx-pause'></i>
+                    <i class='bx bx-fast-forward active'></i>
+                </div>
+                <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class='bx bxs-volume-full'></span>
+        </div>
+    </section>
+
+
+    <section class="playlist">
+        <i class='bx bx-chevron-left back-btn icon' ></i>
+        <h1  class="title">Playlist</h1>
+
+        <div class="queve active">
+            <div class="queve-cover">
+                <img src="img/imposible.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Imposible olvidar</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="img/noter.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Another Heartbreak</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="img/ena.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Enamorate Otra Vez</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="img/siento.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Lo Siento</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="img/estrategia.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">La Estrategia</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="img/tenecesito.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Te necesito</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="img/elamor.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Que es el amor</p>
+        </div>
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="img/tienestu.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Que tienes tu</p>
+        </div>
+    </section>
+
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
