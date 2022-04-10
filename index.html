@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
+    <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="data.js" as="script">
+    <link rel="preload" href="app.js" as="script">
 
     <!-- box icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -20,22 +23,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title>Music Player</title>
+    <link rel="preload" href="https://billboard.com.ar/wp-content/uploads/2019/09/abrahammateo-1-900x595.jpg" as="image">
+    <link rel="preload" href="https://upload.wikimedia.org/wikipedia/commons/7/73/Gusttavo_Lima.jpg" as="image">
+    <link rel="preload" href="https://www.midiorama.com/wp-content/uploads/2016/09/gusttavo-lima.jpg" as="image">
+    <link rel="preload" href="https://www.nme.com/wp-content/uploads/2021/12/olivia-rodrigo-2021.jpg" as="image">
+    <link rel="preload" href="https://los40.com/los40/imagenes/2020/10/22/musica/1603380181_400927_1603381271_gigante_normal.jpg" as="image">
+    <link rel="preload" href="https://los40.com/los40/imagenes/2021/06/29/musica/1624977870_073538_1624977997_gigante_normal.jpg" as="image">
+    <title>Music Player White</title>
 </head>
 <body>
 
-    <audio src="" id="audio-source" controls></audio>
-    
+    <main class="contenedor__musica">
+
+    <audio preload src="" id="audio-source" controls></audio>
     <!-- home section -->
 
     <section class="home-section">
         <!-- carousel -->
         <div class="carousel">
-            <img src="img/cover1.jpg" alt="cover1" class="active">
-            <img src="img/cover2.jpeg" alt="cover2">
-            <img src="img/cover3.jpg" alt="cover3">
-            <img src="img/cover4.jpg" alt="cover4">
-            <img src="img/cover5.jpg" alt="cover5">
+            <img src="https://billboard.com.ar/wp-content/uploads/2019/09/abrahammateo-1-900x595.jpg" alt="cover1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Gusttavo_Lima.jpg" alt="cover2" >
+            <img src="https://www.midiorama.com/wp-content/uploads/2016/09/gusttavo-lima.jpg" alt="cover3">
+            <img src="https://www.nme.com/wp-content/uploads/2021/12/olivia-rodrigo-2021.jpg" alt="cover4">
+            <img src="https://los40.com/los40/imagenes/2020/10/22/musica/1603380181_400927_1603381271_gigante_normal.jpg" alt="cover5">
+            <img src="https://los40.com/los40/imagenes/2021/06/29/musica/1624977870_073538_1624977997_gigante_normal.jpg" alt="cover6">
         </div>
 
         <main class="centrar">
@@ -43,27 +54,27 @@
         <h1 class="heading">Canciones Recientes</h1>
         <div class="playlists-group">
             <div class="playlist-card">
-                <img src="img/cover6.jpg" alt="cover" class="playlist-card-img">
+                <img src="https://studiosol-a.akamaihd.net/letras/215x215/fotos/a/9/b/1/a9b1cc0f0b500676cc06d348f6c238ac.jpg" alt="cover" class="playlist-card-img">
                 <p class="playlist-card-name">top international</p>
             </div>
 
             <div class="playlist-card">
-                <img src="img/elamor.jpg" alt="cover" class="playlist-card-img">
+                <img src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/d/e/e/a/deea4bdb13aa38798b9ffa7739214b5b.jpg" alt="cover" class="playlist-card-img">
                 <p class="playlist-card-name">plays collection</p>
             </div>
 
             <div class="playlist-card">
-                <img src="img/ena.jpg" alt="cover" class="playlist-card-img">
-                <p class="playlist-card-name">abrahan mateo</p>
+                <img src="https://i1.sndcdn.com/artworks-000076266558-o9d8s4-t500x500.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">Mas Escuchadas</p>
             </div>
 
             <div class="playlist-card">
-                <img src="img/estrategia.jpg" alt="cover" class="playlist-card-img">
+                <img src="https://i.ytimg.com/vi/CsKpw6ppj5I/maxresdefault.jpg" alt="cover" class="playlist-card-img">
                 <p class="playlist-card-name">top 50</p>
             </div>
 
             <div class="playlist-card">
-                <img src="img/imposible.jpg" alt="cover" class="playlist-card-img">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/5c5dc4664bf76a183b1087cc51e1bf74-1000x994x1-1534755950.jpg?crop=1xw:1xh;center,top&resize=480:*" alt="cover" class="playlist-card-img">
                 <p class="playlist-card-name">favoritas</p>
             </div>
         </div>
@@ -72,28 +83,26 @@
         <h1 class="heading">Cantantes del todo el mundo</h1>
         <div class="playlists-group">
             <div class="playlist-card">
-                <img src="img/cover1.jpg" alt="cover" class="playlist-card-img">
-                <p class="playlist-card-name">top international</p>
+                <img src="https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/FKDTJI2PCNE2ZE4DBBCCAVZH4Y.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">Jesse - Joy</p>
+            </div>
+            <div class="playlist-card">
+                <img src="https://data.pixiz.com/output/user/frame/preview/400x400/4/5/6/8/1578654_7a382.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">Gusttavo_Lima</p>
+            </div>
+            <div class="playlist-card">
+                <img src="https://imgwoman.elperiodico.com/f8/fd/ba/olivia-rodrigo-presentacion-hgh-school-musical-the-musical-the-series.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">Olivia Rodrigo</p>
             </div>
 
             <div class="playlist-card">
-                <img src="img/cover2.jpeg" alt="cover" class="playlist-card-img">
-                <p class="playlist-card-name">plays collection</p>
+                <img src="https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/JCz--8OCPKpienP01HPDs23ke8M=/1660x934/smart/filters:no_upscale()/guidelive-pegasus.imgix.net/img/photos/2017/02/20/NA_23BRUNPONT_16929551.JPG" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">Bruno Mars</p>
             </div>
 
             <div class="playlist-card">
-                <img src="img/cover3.jpg" alt="cover" class="playlist-card-img">
-                <p class="playlist-card-name">abrahan mateo</p>
-            </div>
-
-            <div class="playlist-card">
-                <img src="img/cover4.jpg" alt="cover" class="playlist-card-img">
-                <p class="playlist-card-name">top 50</p>
-            </div>
-
-            <div class="playlist-card">
-                <img src="img/cover5.jpg" alt="cover" class="playlist-card-img">
-                <p class="playlist-card-name">favoritas</p>
+                <img src="https://www.vagalume.com.br/abraham-mateo/images/abraham-mateo.jpg" alt="cover" class="playlist-card-img">
+                <p class="playlist-card-name">Abraham mateo</p>
             </div>
         </div>
     </main>
@@ -103,13 +112,17 @@
     <div class='bx bx-chevron-left botonArriba' ></div>
     <section class="music-player-section">
 
-        <i class='bx bx-chevron-left back-btn icon hide' ></i>
+      <div class="contendor__titulo">  
+          <i class='bx bx-chevron-left back-btn icon hide' ></i>
+        <h1 class="current-song-name">
+            Cancion 1
+        </h1>
         <i class='bx bx-menu nav-btn icon hide'></i>
+      </div>
 
-        <h1 class="current-song-name">Cancion 1</h1>
         <p class="artist-name hide">artist 1</p>
 
-        <img src="img/cover6.jpg" alt="artist" class="cover hide">
+        <div class="contenedor__imagen"><img src="https://m.media-amazon.com/images/I/61StS3JNysL._SX466_.jpg" alt="artist" class="cover hide"></div>
 
         <div class="sekk-bar-container">
             <input type="range" value="0" class="music-seek-bar">
@@ -118,7 +131,11 @@
         </div>
 
         <div class="controls">
-            <span class='bx bx-redo'></span>
+            <div class="controles__cambio">
+                <!-- <span class='bx bx-repeat'></span> -->
+                <span class='bx bx-repost'><span class="uno">1</span></span>
+                <span class='bx bx-shuffle'></span>
+            </div>
                 <div class="main">
                   
                     <i class='bx bx-rewind active'></i>
@@ -133,72 +150,113 @@
 
 
     <section class="playlist">
-        <i class='bx bx-chevron-left back-btn icon' ></i>
-        <h1  class="title">Playlist</h1>
+        
+        <h1  class="title">
+            <i class='bx bx-chevron-left back-btn icon' ></i>
+            Playlist
+            <div></div>
+        </h1>
 
         <div class="queve active">
             <div class="queve-cover">
-                <img src="img/imposible.jpg" alt="cover">
+                <img src="https://m.media-amazon.com/images/I/61StS3JNysL._SX466_.jpg" alt="cover">
                 <i class='bx bx-pause'></i>
             </div>
-            <p class="name">Imposible olvidar</p>
+            <p class="name">Balada</p>
+        </div>
+
+        <div class="queve active">
+            <div class="queve-cover">
+                <img src="https://i.ytimg.com/vi/EEYHsvcig5I/mqdefault.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Dueles</p>
         </div>
 
         <div class="queve">
             <div class="queve-cover">
-                <img src="img/noter.jpg" alt="cover">
+                <img src="https://i.ytimg.com/vi/c7VK1LiG90Q/sddefault.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Hasta la Raíz</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="https://i.ytimg.com/vi/ZmDBbnmKpqQ/maxresdefault.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">drivers license</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="https://i1.sndcdn.com/artworks-000162499586-vifye7-t240x240.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Unstoppable</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="https://i0.wp.com/instyle.mx/wp-content/uploads/2020/04/a-tres-sobre-el-cielo.jpg?fit=1280%2C1280&ssl=1" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">3MSC cancion final</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/d/e/e/a/deea4bdb13aa38798b9ffa7739214b5b.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Toxic</p>
+        </div>
+
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="https://i1.sndcdn.com/artworks-000076266558-o9d8s4-t500x500.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Locked Out Of Heaven</p>
+        </div>
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="https://i.ytimg.com/vi/CsKpw6ppj5I/maxresdefault.jpg" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Talking To The Moon</p>
+        </div>
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/5c5dc4664bf76a183b1087cc51e1bf74-1000x994x1-1534755950.jpg?crop=1xw:1xh;center,top&resize=480:*" alt="cover">
+                <i class='bx bx-pause'></i>
+            </div>
+            <p class="name">Yellow</p>
+        </div>
+        <div class="queve">
+            <div class="queve-cover">
+                <img src="https://www.vagalume.com.br/abraham-mateo/images/abraham-mateo.jpg" alt="cover">
                 <i class='bx bx-pause'></i>
             </div>
             <p class="name">Another Heartbreak</p>
         </div>
-
         <div class="queve">
             <div class="queve-cover">
-                <img src="img/ena.jpg" alt="cover">
+                <img src="https://i.ytimg.com/vi/15KKDLSpDzk/maxresdefault.jpg" alt="cover">
                 <i class='bx bx-pause'></i>
             </div>
             <p class="name">Enamorate Otra Vez</p>
         </div>
-
         <div class="queve">
             <div class="queve-cover">
-                <img src="img/siento.jpg" alt="cover">
-                <i class='bx bx-pause'></i>
-            </div>
-            <p class="name">Lo Siento</p>
-        </div>
-
-        <div class="queve">
-            <div class="queve-cover">
-                <img src="img/estrategia.jpg" alt="cover">
-                <i class='bx bx-pause'></i>
-            </div>
-            <p class="name">La Estrategia</p>
-        </div>
-
-        <div class="queve">
-            <div class="queve-cover">
-                <img src="img/tenecesito.jpg" alt="cover">
-                <i class='bx bx-pause'></i>
-            </div>
-            <p class="name">Te necesito</p>
-        </div>
-
-        <div class="queve">
-            <div class="queve-cover">
-                <img src="img/elamor.jpg" alt="cover">
+                <img src="https://www.quepasa.com.ve/site/wp-content/uploads/2018/04/NACHO222.png" alt="cover">
                 <i class='bx bx-pause'></i>
             </div>
             <p class="name">Que es el amor</p>
         </div>
-        <div class="queve">
-            <div class="queve-cover">
-                <img src="img/tienestu.jpg" alt="cover">
-                <i class='bx bx-pause'></i>
-            </div>
-            <p class="name">Que tienes tu</p>
-        </div>
     </section>
+    </main>
 
 
     <script src="data.js"></script>
